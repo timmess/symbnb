@@ -49,6 +49,8 @@ class AdController extends AbstractController
                 $manager->persist($image);
             }
 
+            $ad->setAuthor($this->getUser());
+
             // Pas besoin d'appeler le manager de doctrine avec la fonction getDoctrine car on l'a injecté avec l'injection de dépendance EntityManagerInterface $manager.
             // $manager = $this->getDoctrine()->getManager();
 
