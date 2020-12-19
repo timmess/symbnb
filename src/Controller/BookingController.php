@@ -31,7 +31,7 @@ class BookingController extends AbstractController
             $booking->setBooker($user)
                     ->setAd($ad);
 
-            // Si les dates ne sont pas dispo > messages d'erreur
+            // Si les dates ne sont pas dispo : messages d'erreur
             if(!$booking->isBookableDates()){
                 $this->addFlash(
                     'warning',
