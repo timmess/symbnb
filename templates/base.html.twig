@@ -17,8 +17,9 @@
         <script src="/js/popper.min.js"></script>
         <script src="/js/bootstrap.min.js"></script>
 
+        {% block javascripts %}{% endblock %}
+
         {% include "partials/footer.html.twig" %}
 
-        {% block javascripts %}{% endblock %}
     </body>
 </html>
