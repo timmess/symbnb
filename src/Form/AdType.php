@@ -44,7 +44,7 @@ class AdType extends ApplicationType
                 $this->getConfiguration("Introduction", "Donnez une description globale de l'annonce")
             )
             ->add(
-                'content', 
+                'content',
                 TextareaType::class, 
                 $this->getConfiguration("Description détaillée", "Tapez une description")
             )
